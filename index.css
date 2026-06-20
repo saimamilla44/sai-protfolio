@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 100vh;
+}
+body{
+   background-image: url("background.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+ }
+ .header{
+    height:90px;
+    width:100%;
+    font-size: 20px;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+ }
+ .header a{
+    text-decoration: none;
+    color:hsla(0, 0%, 100%, 0.898);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 7px;
+ }
+ .header h1{
+    font-size: 30px;
+    padding:40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .header a:hover{
+    background-color: hsla(120, 89%, 50%, 0.943);
+    border-radius: 30px;
+    transform: scale(1.2);
+ }
+ .Main{
+    color:white;
+    text-align: center;
+    font-size:30px;
+    padding:20px;
+ }
+ .Main h2{
+    padding:20px;
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, 0.86);
+ }
+ .Main h1{
+    color: hsla(120, 97%, 49%, 0.769);
+ }
+  
+ 
+ .Main p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:hsla(0, 0%, 88%, 0.607);
+    font-size: 18px;
+    padding: 20px;
+ }
+ .Image img{
+    height: 300px;
+    width:200px;
+    margin-left:40%;
+    border-radius: 150px;
+ }
+ .Content{
+   color:azure;
+   display:flex;
+   font-size: 11px;
+   padding:100px;
+   align-items: center;
+   justify-content: space-around;
+    
+   background-size:cover;
+   gap:100px;
+ 
+
+ }
+ .Content p{
+   font-size: 18px;
+ }
+ .Content h2{
+   font-size: 20px;
+   margin-top: 90px;
+   margin-right: 120px;
+   color:black;
+   background-color:rgba(43, 220, 3, 0.905);
+   border-radius:10px;
+
+ }
+ .Content h2:hover{
+    background-color: hsla(120, 89%, 50%, 0.943);
+    border-radius: 30px;
+    transform: scale(1.2);
+ }
+
+ .Content1{
+   color:hsla(0, 0%, 100%, 0.893);
+   font-size:30px;
+   margin-left: 47%;
+   padding: 20px;
+ }
+ .Skills h1{
+   font-size:30px;
+   
+   margin-left: 10px;
+   color:hsla(0, 0%, 100%, 0.893);
+ }
+ .Skills{
+   font-size: 35px;
+   display:flex;
+   flex-wrap: wrap;
+   padding:30px;
+   gap:30px;
+   width:70%;
+   height:100px;
+   background-color: hsla(120, 95%, 49%, 0.163);
+   align-items: center;
+   margin-left: 15%;
+   border-radius: 10px;
+   box-shadow: 0px 0px 30px hsla(120, 98%, 49%, 0.942);
+   border: 1px solid hsla(120, 93%, 16%, 0.878);
+
+ }
+.Skills .frontend i{
+   font-size: 22px;
+   color: hsla(120, 93%, 48%, 0.94);
+   text-shadow: 0px 0px 30px hsl(120, 98%, 49%);
+}
+.Skills .icons{
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   color:rgba(204, 205, 204, 0.839);
+}
+.Skills .icons i{
+   
+   font-size: 15px;
+   color:aliceblue;
+   padding: 5px;
+}
+.Skills .icons div{
+   font-size: 18px;
+   padding: 10px;
+}
+.icons .html i{
+   color:brown;
+ }
+.icons .css i{
+   color:blue;
+}
+.icons .javascript i{
+   color:blueviolet;
+}
+.icons .react i{
+   color:yellowgreen;
+}
+.icons .bootstrap i{
+   color:blanchedalmond;
+}
+
+.Skills2{
+   
+   width: 100%;
+   height: 100px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 30px hsla(120, 98%, 49%, 0.942);
+   border: 1px solid hsla(120, 93%, 16%, 0.878);
+   margin-top: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+ .Skills2 .tags i{
+   font-size: 15px;
+   color: hsla(120, 93%, 48%, 0.94);
+   text-shadow: 0px 0px 30px hsl(120, 98%, 49%);
+   
+ }
+ .Skills .tags{
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   color:rgba(204, 205, 204, 0.839);
+
+}
+.Skills2 .tags i{
+   font-size: 18px;
+   color:aliceblue;
+   padding: 6px;
+}
+.Skills2 .tag div{
+   font-size: 18px;
+   padding: 10px;
+}
+
+.tags .rest i{
+   color:yellow;
+
+}
+.tags .python i{
+   color:blue;
+}
+.tags .java i{
+   color: violet;
+
+}
+.tags .express i{
+   color:brown;
+}
+.tags .nodejs i{
+   color:greenyellow;
+}
+.tags .mysql i{
+   color:aqua;
+}
+.tags .git i{
+   color:chocolate;
+}
+.fotter h1{
+color:green;
+transform: translateX(-90px);
+}
+
+.fotter{
+justify-content: space-around;
+   align-items: center;
+   display:flex;
+}
+ 
+ .fotter .address{
+border-radius: 30px;
+
+}
+.fotter .CONTACT{
+   color:#ffffffb7;
+   font-size: 30px;
+   margin-left: 30px;
+   padding:30px;
+   
+}
+.address{
+background-color: hsla(120, 82%, 11%, 0.657);
+border-radius: 5px;
+ height:300px;
+ width:300px;
+ box-shadow: 0px 0px 30px hsla(120, 93%, 23%, 0.449);
+ transform: translate(-40px);
+ 
+
+}
+.address input{
+   margin-left: 30px;
+   margin-top: 15px;
+   padding: 10px;
+   background-color: black;
+}
+.address button{
+   
+   color:green;
+   width:100px;
+   margin-left: 50px;
+   margin-top: 50px;
+   height:25px;
+   background-color: rgba(10, 247, 57, 0.83);
+   transform: scale(1.2);
+   }
+.fotter h1{
+   color:bisque;
+   margin-bottom: 300px;
+   padding:50px;
+   text-align: center;
+}
+.email1{
+display:flex;
+justify-content: space-around;
+}
+.email{
+   padding:10px;
+}
+.Skills2 .tags .nodejs{
+   font-size: 18px;
+}
+.Skills2 .tags .python{
+   font-size: 18px;
+}
+
+.Skills2 .tags .java{
+   font-size: 18px;
+}
+
+.Skills2 .tags .git{
+   font-size: 18px;
+}
+
+.Skills2 .tags .mysql{
+   font-size: 18px;
+}
+
+.Skills2 .tags .express{
+   font-size: 18px;
+}
+.Skills2 .tags .rest{
+   font-size: 18px;
+}
+
+

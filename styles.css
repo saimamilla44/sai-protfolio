@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ .parent{
+  background-image: url("protfiolio.2.jfif");
+ background-size:cover;
+ background-position: center ;
+ background-repeat:no-repeat;
+ background-size: cover;
+ }
+ body{
+  background-size: cover;
+  background: url("protfiolio.2.jpg")
+ }
+.header{
+
+  font-size: 40px;
+  color:black;
+  font-style: bold;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  paddind:10px;
+  background:linear-gradient(blue,white);
+  
+  
+}
+.header .menu a{
+  font-size: 20px;
+  color:black;
+  text-decoration: none;
+  padding: 10px;
+}
+.image{
+  height:1000x;
+  color:red;
+}
+.content{
+     
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color:white;
+    font-size: 20px;
+}
+.content .task{
+  font-size: 40px;
+}
+.icons a{
+  font-size:25px;
+background-color: white;
+background-color: black;
+height:50px;
+border-radius: 10px;
+}
+
+.btn{
+  text-decoration: none;
+  font-size: 30px;
+  color:black;
+  padding:5px;
+}
+.overlay{
+    position: absolute;
+    middle: 20px;
+    right: 200px;
+    width: 400px;
+    bottom:60px;
+    border-radius:300px;
+}
+.summary{
+  background:linear-gradient(blue,black);
+  font-size:10px;
+  color:blanchedalmond;
+  padding:10px;
+  gap:10px;
+}
+.fotter{
+  display:flex;
+  gap:150px;
+  padding: 20px;
+  
+}
+.elements a{
+  text-decoration: none;
+  color:black;
+  font-size: 30px;
+  width:50%;
+  align-items: start;
+
+}
+ .elements{
+  font-size: 30px;
+  color:antiquewhite;
+  text-align: center;
+  height: 300px;
+  width:500px;
+  padding:15px;
+  background:linear-gradient(blue,black);
+  border-radius: 15px;
+
+}
+.element2{
+  font-size: 30px;
+  color:antiquewhite;
+  height:300px;
+  width:500px;
+  padding:15px;
+  text-align: center;
+  background: linear-gradient(blue,black);
+  border-radius: 15px;
+}
+
+.element2 a{
+ text-decoration: none;
+  color:black;
+  font-size: 30px;
+  
+  width:50%;
+  align-items: start; 
+}
+
+.element3{
+  font-size: 30px;
+  color:antiquewhite;
+  height:300px;
+  widht:550px;
+  padding:15px;
+  text-align: center;
+   background:linear-gradient(blue,black);
+  border-radius: 15px; 
+}
+
+.element3 a{
+ text-decoration: none;
+  color:black;
+  font-size: 30px;
+  
+  width:50%;
+  align-items: start; 
+}

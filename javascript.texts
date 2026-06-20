@@ -1,0 +1,573 @@
+JAVASCRIPT
+    is a programming language initially designed to interact with elements of webpages
+
+    3 main parts:
+        core functionality - ECMASCRIPT(europe company  manfactured association)
+        -ES5/ES6/ESNIEXT
+        document object model(DOM)-
+            :provides interfacs for interactingwith elements on web pages.
+        Browser Object model(BOM)-
+            provides the browser API interacting with web browser.
+    
+    JIT-Just-in-Time compiler
+        Brended Eich-1995-netscape developer
+        Mocha
+        Live Script
+        Java Script
+        
+        JAVASCRIPT has a feature
+        1)daynamic:meaning the variables can be reassigned values in any type
+        2)object orented programming:it supports eith the object protocoltype and classes
+        3)functional:functions can be created via expressions and passed like otherobjects
+        4)syntax:it is based on java and c language
+        5)cross-platform:JS is a cross-platform language
+        ^)Free:it is alread runing in most browser
+
+        JAVASCRIPT was standarized in 1997 by european computer manfacture association(ECMA)
+        as ECMA  .the first addition fa this standrad was published in june 1997
+
+        ECMAScript 5,also know as ES5was standardized in december 2009 as part of the ECMA-262 specification.itintoduce several important feature and improvment to JS lang,includeing strict mode,support for JSON,newn array method
+
+        jascript can written inside <script> element
+        in html
+        <script>
+        </script>
+        external JS files has to save with extension
+        .JS and include in the script with in scr attributes
+        <script src = "script.js"></script>
+        <script>  .js
+        -internal script
+        -External script
+
+script
+********
+whitespaces:ignores whitespace
+statement:";"
+identifiers:(a-z) or (A-Z) (_),($) followed by (a-z,A_Z),numbers(0-9),(-),($)
+comments:ignore the comment -single line-//-blockline/*   */
+blocks:sequence of zero or more simple statement-{}
+expression:is piece of code evaluation to value.
+keywords:lexical grammer
+
+whitespaces:
+refers to character that provides space btw other characters
+sapce
+newline
+tab
+javascript engine ignores whitespace.we can use whitespaces
+to format THE code make it easy to raed and maintain
+var a = 10;
+if(true){
+    //
+} 
+
+statement;
+a js is a code that declaers a var os instruct the js engine to do a task.
+A simple statement is terminated by semicolon;
+simicolon is optional
+
+var a 10;
+
+identifiers:
+an identifiers name we choose the var parameters, functions,classes....etc
+an idenrifiers (a-z) or (A-Z) (_),($) followed by (a-z,A_Z),numbers(0-9),(-),($)
+
+Blocks:
+a block is sequence of zero or more simple statements
+a block is a deliminating a curly brackets{}
+if(true){
+    statements
+}
+
+Comments:
+comments allow ro add notes or hints to JS code.
+when executing the code ,the jS engine ignores the comments.
+
+2 types
+singleline comment-// (2 forward slashes)
+block comments-/*statement*/
+ 
+ expression:
+ an expressionn is a piece of code that evaluate the value.
+ 2+1
+
+ keywords in lexical grammer:
+ ___________________________
+break
+case
+catch
+class
+const
+continue
+debugger
+default
+delete
+do
+else
+export
+extends
+false
+finally
+for
+function
+if
+import
+in
+instanceof
+new
+null
+return
+super
+switch
+this
+throw
+true
+try
+typeof
+var
+void
+while
+with
+
+
+ javascript variables
+ ********************
+a variablesis a lable that refarence a value like a number
+or strings or any datatype
+
+to decleare a variable, we used
+ var keyboard/reversed word
+ followed by identifiers.
+  var message;
+  var a;
+  var condition;
+
+  ES6
+  let 
+  const 
+  var a;
+  var
+
+
+  a var name can be any valid by defultthe var
+  has a special value-undefined if we have not asssigned 
+  a value to it.
+  default value will be undefined
+
+  var name rules:
+    var names are case-sensitive.
+
+        var message;
+        var Message;
+         
+         var msg;
+         var Msg;
+
+
+
+index.html
+<!DOCTYOPE>
+<htmllang="en>
+<head>
+<meta charset="UTF-8>
+<META NAME="viewport" content="width=device-width,
+<title>dicument</title>
+<script src="./ script.js
+
+
+
+ JAVASCRIPT is primitive datatype
+  NULL
+  undefined
+  boolean
+  number
+  strings
+  symbols(ES6)
+  bigint(ESNext)
+
+  and complex bata type : object
+      var a : 20;
+      var mesage = "hello this is a string";
+      var b = 3.45678;
+      var condiition = true;
+
+
+    typeof operator is used to get the data type of avarible.
+    consol.log(a, message , b, condition);
+    consol.log(typeof a,typeof message, typeof b,typeof message);
+
+
+var a;
+consol.log(a);//undefined 
+consol.log(typeof a);//undefined
+
+var b=null;
+consol.log(b); //null
+consol.log(typeof b);//object
+
+
+var a=1* "hello";
+consol.log(a);//not a number
+consol.log(typeof a);//number
+
+
+java script operator
+!)arithmatic operators
+**********************
++
+-
+*(asterik)
+/
+remainder operator(modulas)
+%
+var a = 20;
+var b = 60;
+consol.log(a % b);//2
+
+type coercion refer to the processs of automatic or iimplicit conversion of
+values from one data to another data
+
+var a = 1+ "hello"; //type conversion
+consol.log(a);//1hello
+consol.log(typeof a);//string
+
+var b = 1 + true;
+consol.log(b);//2
+consol.log(typeof b);//number
+
+
+type conversion in  javascript
+type conversion in javascript is the process of converting data of one type to another
+there are two types conversion
+this means that the conversion happens automatically
+Explicit type conversion
+that means that the cinversion has to be done by the manually by the user
+
+
+assignment operator
+*********************
+=                       a=b
++=                      a +=b       a= a+b
+-=                      a-=b
+*=
+/=
+%=
+&=  AND
+|= OR
+
+var a=10;
+var b=20;
+consol.log(a b);//10,20
+a +=b;
+consol.log(a b);//30 20
+a -=b;//a=a-b   30-20=10 ,20
+consol.log(a b);//10,20
+a*=b;// a=a*b 10*20=200 20
+consol.log(a b);//200 20
+a%=b;// a=a%b  10 %20
+
+
+
+unary operator
+****************
++x -convert a value into a number
+-x-conver a value into a negate it
+++X pre incremet
+--X pre drecrement
+X+++ post increment
+X---post decrement
+
+
+var a=10;
+consol.log(a  typeof a);// 10 string
+Consol.log(+a,typeof +a);
+Consol.log(-a,typeof -a);
+
+Consol.log(++a);//11
+Consol.log(a);//11
+Consol.log(--a);//10
+Consol.log(a);//10
+Consol.log(a++);//10
+Consol.log(a);//11
+Consol.log(a--);//11
+Consol.log(a)//10
+
+
+comparision operator
+*******************
+>
+<
+<=
+>=
+==equal
+!=not equal
+=== strictly equal
+!== strictly not equal
+
+var a='20';
+var b=20;
+consol.log(a === b);//false
+consol.log(a==b);//true
+
+
+logical operator
+*******************
+!(logical not)  (!!Double negetion)
+||(logical OR)
+&&(logical AND)
+
+consol.log(!undefined)//true
+consol.log(!null)//true
+consol.log(!20)//false
+consol.log(!0)//true
+consol.log(!NAN)//true
+consol.log(!{})//false
+consol.log(!");//true
+consol.log(!text);//true
+consol.log(text);//false
+consol.log(true);//false
+consol.log(false);//true
+
+var a=10||20
+consol.log(a);//10
+
+var b=20&&30
+consol.log(b);//20
+
+var x=0||10
+consol.log(x);//0
+
+var y=10||30
+consol.log(y);//30
+
+var a,b=10&&20;//undefined  20
+a+=b;//NAN
+console.log(a,b);//nan 20
+
+var x=10 || 20,y=30 && 40;
+x +=y;//50
+console.log(x,y);//50 40
+
+var c=0||10 && 0 ||30 && 40;
+console.log(c);//40
+
+
+javascript  type conversion
+***************************
+value       string conversion       number conversion       boolean conversion
+******       **************         ******************      *****************
+1               "1"                      1                        true
+0                "0"                   0                           false
+"1"             "1"                    1                           true
+"0"             "0"                    0                           true
+"one"           "one"                 NAN                         true
+true            "true"                1                           true
+false           "false"               0                           false
+null            "null"                0                           false
+undefined       "undefined"           NaN                         false
+"                """"                 0                           false
+''               ""                   0                           true   
+
+logical and assignment operators
+************************************
+||=
+&&=
+??=nullish coalescing(ES next)
+
+x=??=y
+x??(x=y)
+**otherobjects
+ var title = "something";
+ title || ="untitled";
+
+ console.log(title);
+
+ exponentiation operators
+ **************************
+        **
+        **=    x **=y   x = x ** y;
+        3^3=  18
+
+        unit:3   control statements
+        ***************************
+        introduction:
+            Cs is intend to allow the user to writ the script that determine which lines of
+            code 
+        types of control statement in js
+        ********************************
+        1)condition statement
+        2)Iterative statement(loop):
+        3)Jump Statement
+
+        if statements
+        1)simple if
+        2)if-else
+        3)neste-if
+        4)if-else-if ladder
+
+simple if
+*********
+it is a condition statement used to decide whether a certain  
+statement or blockof statement will be execute or not
+
+syntax:
+        var a =20;
+if(a){
+    console.log("a is there",a);
+}else{
+    console.log("a is 0 or not there");
+}
+
+
+nested if statement
+******************
+if(condition 1)
+{
+    if (condition 2)
+    {
+        statement 1;
+    }
+    else
+    {
+        statement 2;
+    }
+}
+else
+{
+    statement 3;
+}
+
+syntax:var a = 60;
+if(a == 20)
+{
+    console.log('equal to 20');
+
+}
+else if(a==30)
+ {
+    console.log("equals to 30");
+ }
+ else if(a==40)
+ {
+    console.log("equals to 40");
+ }
+ else if (a==50)
+    {
+        console.log("equals to 50");
+    }  
+    else
+        {
+            console.log("not equals to 20/30/40/50");
+    }
+
+
+height 1.72,weight:70-bmi=weight/(height*height);
+weight status:bmi <18.5 --->under weight
+weight status :bmi>=18.5&& <=24.9 ---> healthy weight
+weight status: bmi >=25 && <=29.9 -->  over height
+weight status:bmi obesity
+ex:var year=2016,month="feb",noofDays=0;
+if(month==="jan"||month==="mar"||month==="may"||month==="july"||month==="aug"||month==="Oct"||month==="Dec"){
+    noofDays=31;
+
+}else if (month==="feb"){
+    if(year % 4==0 &&!(year%100===0)||year%400==0)
+{
+    noofDays=29;
+    }else{
+        noofDays=30;
+    }
+
+    switch
+    ********
+    switch statement os a evaluates a experisions,compare results with case
+    values ,and executes the statement association with matching case value
+    break statemet using a termineting a block
+
+    syntax:
+        switch
+        switck(expression){
+          case value1:
+                ststement1;
+                break;
+          case value1:
+                ststement1;
+                break;
+            case value2:
+                ststement2;
+                break;
+            default:
+                statement;
+                var year = 2016,month = "sep";
+ var noofDays = 0;
+ switch (month){
+    case"jan":
+    case"mar":
+    case"july":
+    case"aug":
+    case"oct":
+    case"dec":
+    noofDays=31; 
+    break;
+    case"Apr":
+    case"jun":
+    case"sep":
+    case"nov":
+    noofDays=30;
+    break;
+    case"feb":
+     if (year % 4==0 && !(year % 100==0)|| year % 400==0){
+        nofDays = 29;
+ }else{
+    noofDays = 28;
+ }
+   break;
+ default:
+    noofdays = 0;
+ }
+ console.log(noofDays);
+
+}
+ 
+ IBM   EX:
+ ******
+
+var weight=55;
+var height=1.82;
+var bmi=weight/(height*height);
+var category="";
+switch(true){
+    case bmi <18.5:
+        category="underweight";
+        break;
+        case bmi>=18.5&&bmi <24.9:
+            category = "normal weight";
+            break;
+            case bmi= "overweight":
+            break;
+            case bmi >= 30:
+            category = "invalid Bmi";
+}
+console.log("bmi :", bmi.toFixed(2),categtory)
+
+while loop
+************
+
+while loop loops through a block of code as long as the specified condition evaluate true
+as soon as the condition fails, the loop is stoped
+
+var i=0;
+while(1<10){
+    console.log(i);
+    i++;
+}
+
+do-while loop
+***************
+with a do while loop the block code executed once and then condition is evaluated if the condition is 
+true the statement is  repeat as long as specified condition evaluated to is true
+the generic syntsx of the do-while loop is:
+
+do{
+    //code to beexecuted
+}
